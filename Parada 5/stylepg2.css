@@ -1,0 +1,41 @@
+body{
+    background-image: url(blue1.jpg);
+    background-size: cover;
+    
+    
+}
+
+#menu{
+    color: white;
+    text-decoration: none;
+    padding-left: 95%;
+    
+
+    
+    
+  
+}
+h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+    
+}
+img{
+width: 800px;
+height: 370px;
+}
+
+#prf{
+    text-decoration: underline;
+}
+footer{color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: small;}
