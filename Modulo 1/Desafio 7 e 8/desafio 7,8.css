@@ -1,0 +1,18 @@
+#cabeçalho{
+    background-color: rgb(46,139,87);
+    color: white;
+}
+table{
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+body{
+    padding-inline-start: 25%;
+}
+
+th, td, tr{
+    border: 1px solid black;
+}
