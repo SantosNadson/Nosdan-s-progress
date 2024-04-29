@@ -34,7 +34,7 @@ body{
 img{
     margin: 20px;
 }
-/* MOSTLY SMARTPHONES*/
+/* MOST SMARTPHONES*/
 @media screen and (max-width:730px){
     #header{
        height:50px;
