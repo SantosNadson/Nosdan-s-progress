@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#header{
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    
+    
+    
+}
+
+#header-logo{
+    width: 200px;
+    height: 60px;
+    align-self: flex-start;
+    margin: 50px;
+}
+
+#menu{
+    display: block;
+    background-color: rgb(219, 219, 219);
+    height: 60px;
+    line-height: 60px;
+    width: 800px;
+    margin: 50px;
+}
+
+#menu ul a{
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#login-button{
+    border: 0;
+    width: 120px;
+    height: 60px;
+    font-weight:bold ;
+    align-self: flex-start;
+    margin-top: 50px;
+    background-color: rgb(219, 219, 219);
+
+}
+
+#sub-menu-container{
+    display: inline;
+}
+
+#sub-menu{
+    width: 1280px;
+    background-color: rgb(219, 219, 219);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 50px;
+    
+}
+
+#sub-menu ul a{
+    text-decoration:none ;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 90px;
+}
+
+#content{
+   text-align: center;
+   margin-top: 90px;
+   
+}
+
+#content main img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;   
+}
+#mobile-button{
+    display: none;
+    align-self: flex-end;
+
+}
+
+#mobile-header{
+    display: none;
+    
+}
+#mobile-logo{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    display: none;
+
+}
+#dropdown-content{
+    display: none;
+    position: absolute;
+
+}
+
+#dropdown-menu-button{
+    position: relative;
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    #header{
+        display: none;
+    }
+
+    #sub-menu-container{
+        display: none;
+        
+        
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #dropdown-menu-button{
+        display: block;
+        background-color: transparent;
+        margin-bottom:0px;
+        border: 0;
+    }
+    
+    #dropdown-menu-button:hover #dropdown-content{
+        display: block;
+    }
+
+    #dropdown-content a {
+        text-decoration: none;
+        color: black;
+        font-size: xx-small;
+        
+    }
+    #dropdown-menu-button img{
+        width: 40px;
+        height: 40px;
+    }
+
+    
+    #content main img{
+    width: 150px;
+    height: 200px; 
+    flex-direction: column;
+    }
+
+    #content{
+        display: block;
+        margin-top: 50px;}
+
+    #mobile-button{
+        display: flex;
+        margin-bottom:20px;
+        align-self: flex-end;
+        margin-left: 180px;
+        height: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #mobile-header{
+        display: flex;
+        height: 80px;
+    }
+    #mobile-logo{
+        display: flex;
+        align-self: flex-start;}
+    }
+
+
+    
+
