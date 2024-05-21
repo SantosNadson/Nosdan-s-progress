@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#header{
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 150px;
+    text-align: center;    
+    
+}
+
+#header-logo{
+    width: 200px;
+    height: 60px;
+    align-self: flex-start;
+    margin: 50px;
+}
+
+#menu{
+    display: flexbox;
+    background-color: rgb(219, 219, 219);
+    height: 60px;
+    line-height: 60px;
+    width: 800px;
+    margin: 50px;
+    z-index: 1;
+}
+
+#login-button{
+    border: 0;
+    width: 120px;
+    height: 60px;
+    font-weight:bold ;
+    align-self: flex-start;
+    margin-top: 50px;
+    background-color: rgb(219, 219, 219);
+    display: block;
+
+}
+
+#sub-menu-container{
+    display: inline-flex;    
+}
+
+#sub-menu{
+    width: 1280px;
+    background-color: rgb(219, 219, 219);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 50px;
+    
+    
+    
+    
+}
+
+#sub-menu a{
+    text-decoration:none ;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 90px;
+    
+    
+
+
+}
+
+#content{
+   text-align: center;
+   margin-top: 90px;
+   
+   
+}
+
+#content main img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;   
+}
+
+.dropdown{
+    border: 0;
+    background-color: rgb(219, 219, 219);
+    
+    
+    
+}
+
+.dropdown span{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    margin: 50px;
+    
+    
+}
+.dropdown-content{
+    display: none;
+    z-index: 2;
+    
+    
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: rgb(36, 33, 33);
+    margin: 5px;
+    display: block;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+}
+#mobile-btn-dropdown:hover #mobile-btn-dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:910px){
+    #header-logo{
+        display: flex;
+        
+    }
+    #header{
+        width: 750px;
+    }
+
+    
+
+    #menu{
+        display: block;
+        width: 300px;
+        margin-left: 40px;
+        
+    
+        
+    }
+
+    #dropdown{
+        display: flex;
+        
+        
+        
+        
+    }
+    #menu button{
+        
+        width: 70px;
+        
+    }
+
+    #menu button span{
+        font-size: xx-small;
+        margin: 0px;
+        align-self: center;
+    }
+
+    #sub-menu-container{
+        display: flex;
+        width: 635px;
+        margin-left: 20px;
+       
+        
+        
+        
+    }
+   #sub-menu a{
+   margin: 10px;
+   margin-top: 0px;
+   }
+
+   #content{
+    display:flex ;
+    margin: 10;
+    margin-top: 5px;
+   }
+   #content main img{
+    width: 250px;
+    height: 250px;
+    margin: 10px; 
+    padding-left: 50px;
+}
+#login-button{
+    display: none;
+
+}
+
+}
+
+
+    
+
