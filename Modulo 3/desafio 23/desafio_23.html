@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 23</title>
+</head>
+<body>
+    <h1>CARDÁPIO</h1>
+    <button onclick="menu()">Clique para obter o cardápio</button>
+    <p id="menuContent"></p>
+    <label for="itemInput">Digite o número do item desejado:</label>
+    <input type="text" id="itemInput">
+    <button onclick="getValue()">Obter valor</button>
+    <p id="result"></p>
+    
+</body>
+<script>
+    function menu(){
+        document.getElementById('menuContent').innerText = "1-pão \n 2-leite\n 3-carne\n 4-banana\n 5-macarrão\n 6-batata doce\n 7-queijo\n 8-Frango"
+    }
+    function getValue(){
+        const item = document.getElementById("itemInput").value;
+        const base = [product = 0, pão = "R$7,00",leite = "R$5,50",carne = "R$25,00",banana = "R$2,99",macarrão = "R$4,30",batata = "R$7,50",queijo = "R$35,00",frango = "R$40,00"];
+
+        if (item in base){
+            document.getElementById('result').innerText = `Custa ${base[item]}.`;
+        }else{
+            document.getElementById('result').innerText = "Produto inválido ou não registrado.";
+
+        }
+        }
+</script>
+</html>
