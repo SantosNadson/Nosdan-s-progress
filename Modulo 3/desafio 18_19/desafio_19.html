@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEIÇÕES - Desafio 19</title>
+</head>
+
+<body id="body-color" class="bodyColor">
+    <div>
+        <h1>ELEIÇÕES 2054</h1>
+        <h2>Bem vindo(a), clique no botão abaixo para obter as opções.</h2>
+        <button onclick="options()">CANDIDATOS</button>
+        <button onclick="change_color()">COR DE FUNDO</button>
+        <button onclick="random()">MUDAR COR AUTOMATICAMENTE</button>
+    </div>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1,
+        h2 {
+            color: rgba(245, 245, 245, 0.74);
+        }
+
+        div {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        button{
+            width: 300px;
+            height: 80px;
+            background-color: rgb(194, 74, 74);
+            color: white;
+            border: 0;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+        }
+    </style>
+    <script>
+        function random(){{
+            const colors = ['red','purple','oceanblue','brown','orange','blue','green','yellow','gray',];
+            const randomColors = colors[Math.floor(Math.random()*colors.length)];
+            document.body.style.backgroundColor = randomColors;
+        }
+
+        }
+        function options() {
+            let voto = prompt("Olá, escolha seu candidato: Marcus, George, Abraham\nRoberston ou nulo:")
+            switch (voto) {
+                case 'Marcus':
+                    alert("Você votou em Marcus");
+                    break;
+                case 'George':
+                    alert("Você votou em George");
+                    break;
+                case 'Abraham':
+                    alert("Você votou em Abraham");
+                    break;
+                case 'Robertson':
+                    alert("Você votou em Robertson");
+                    break;
+                case 'nulo':
+                    alert("Você votou nulo");
+                    break;
+                default:
+                    alert("Escolha uma opção válida e não esqueça que nomes próprios começam com letra maiúscula :(");
+            }
+        }
+        function change_color() {
+            let colorOption = prompt("Escolha uma cor de fundo:\nvermelho--azul--marrom\ncinza--verde--padrão:");
+            switch (colorOption) {
+                case 'vermelho':
+                    document.getElementById("body-color").style.backgroundColor = 'red';
+                    break;
+                case 'azul':
+                    document.getElementById("body-color").style.backgroundColor = 'blue';
+                    break;
+                case 'marrom':
+                    document.getElementById("body-color").style.backgroundColor = 'brown';
+                    break;
+                case 'cinza':
+                    document.getElementById("body-color").style.backgroundColor = 'gray';
+                    break;
+                case 'verde':
+                    document.getElementById("body-color").style.backgroundColor = 'green';
+                    break;
+                case 'padrão':
+                document.getElementById("body-color").style.backgroundColor = 'black';
+                    break;
+                default:
+                    alert("Escolha uma cor disponível ou opção válida.")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
