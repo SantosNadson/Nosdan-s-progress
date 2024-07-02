@@ -1,4 +1,4 @@
-Neste site foram utilizados os seguintes elementos obtidos no Bootstrap:
+Neste site foram utilizados os seguintes elementos obtidos do Bootstrap:
 
 Navbar: https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works
 
